@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
 
 :root
 {
@@ -13,7 +13,7 @@
     --gd-linear: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
   
     /* Font Famliy */
-      --fn-family: "Space Grotesk", sans-serif;
+      --fn-family:  'Space Grotesk', sans-serif;
       
     /* Font Size */
     --fw-500: 500;
@@ -111,6 +111,7 @@ svg {
 
 .front
 {
+    translate: -7rem 0rem;
     background: url("./images/bg-card-front.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -123,9 +124,9 @@ svg {
     background-size: contain;
 }
 
-.side-image
-{
-    max-height: 100%;
+.side-image > img
+{   
+  height: 100vh;
 }
 
  .main-form
@@ -149,8 +150,23 @@ svg {
 {
     display: flex;
     flex-direction: column;
+}
+
+.gap-100
+{
     gap: 1rem;
 }
+
+.space-btwn
+{
+   justify-content: space-between;
+}
+
+.align-btwn
+{
+    align-content: space-between;
+}
+
 
 .flex-r
 {
@@ -180,4 +196,24 @@ svg {
     color: var(--clr-dark-violet);
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.margin-left
+{
+   margin-left:1rem ;
+}
+
+input[type=text], input[type=tel]
+{
+    padding: 0.2rem;
+}
+
+.cards
+{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    position: absolute;
+    top: 10rem;
+    left: 18rem;
 }
