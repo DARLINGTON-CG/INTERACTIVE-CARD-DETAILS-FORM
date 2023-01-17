@@ -103,25 +103,29 @@ svg {
 .card
 {
     display: grid;
-    width: 447px;
-    height: 245px;
+    width: 380px;
+    height: 200px;
     border-radius: 0.5rem;
-    padding: 1.5rem;
+     
+    padding: 1rem;
 }
 
 .front
 {
-    translate: -7rem 0rem;
+ 
     background: url("./images/bg-card-front.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    translate: -5vw 0;
 }
 
 .back
 {
     background-image: url("./images/bg-card-back.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 .side-image > img
@@ -214,6 +218,6 @@ input[type=text], input[type=tel]
     gap: 1rem;
     flex-direction: column;
     position: absolute;
-    top: 10rem;
-    left: 18rem;
+    top: 24vh;
+    left: 20vw;
 }
